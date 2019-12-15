@@ -1,7 +1,7 @@
 window.onload = function () {
-  var dynamicbox = document.getElementById("dynamicbox");
-  var staticbox = document.getElementById("staticbox");
-  dynamicbox.onmousedown = function (event) {
+  var dynamicBox = document.getElementById("dynamicbox");
+  var staticBox = document.getElementById("staticbox");
+  dynamicBox.onmousedown = function (event) {
     document.onmousemove = function (event) {
       event = event || window.event;
       var st = document.body.scrollTop || document.documentElement.scrollTop;
@@ -9,25 +9,25 @@ window.onload = function () {
       var left = event.clientX + sl;
       var top = event.clientY + st;
       if (left <= 920) {
-        dynamicbox.style.left = left + "px";
+        dynamicBox.style.left = left + "px";
       } else {
-        dynamicbox.style.left = 920 + "px";
+        dynamicBox.style.left = 920 + "px";
       }
       if (top < 0) {
-        dynamicbox.style.top = 0;
+        dynamicBox.style.top = 0;
       } else if (top <= 720) {
-        dynamicbox.style.top = top + "px";
+        dynamicBox.style.top = top + "px";
       } else if (top > 720) {
-        dynamicbox.style.top = 720 + "px";
+        dynamicBox.style.top = 720 + "px";
       }
       if (left > 120 && left < 280) {
         if (top > 120 && top < 280) {
-          staticbox.style.background = "blue";
+          staticBox.style.background = "blue";
         } else {
-          staticbox.style.background = "glod";
+          staticBox.style.background = "glod";
         }
       } else {
-        staticbox.style.background = "glod";
+        staticBox.style.background = "glod";
       }
 
     }

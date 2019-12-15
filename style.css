@@ -1,21 +1,21 @@
 #container {
-    width: 1000px;
-    height: 800px;
-    background-color: aliceblue;
+  width: 1000px;
+  height: 800px;
+  background-color: aliceblue;
 }
 
 #dynamicbox {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background-color: green;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: green;
 }
 
 #staticbox {
-    position: absolute;
-    left: 200px;
-    top: 200px;
-    width: 80px;
-    height: 80px;
-    background-color: gold;
+  position: absolute;
+  left: 200px;
+  top: 200px;
+  width: 80px;
+  height: 80px;
+  background-color: gold;
 }
